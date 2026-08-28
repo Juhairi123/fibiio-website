@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibiio | Smart Nutrition is Coming Soon</title>
+    <style>
+        :root {
+            --primary: #2C5E43; /* Deep health green */
+            --accent: #E29578;  /* Warm clay/supplement tone */
+            --bg: #F8F9FA;      /* Clean off-white */
+            --text: #2D312E;    /* Dark charcoal */
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            background: #ffffff;
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .badge {
+            background-color: rgba(44, 94, 67, 0.1);
+            color: var(--primary);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0 0 10px 0;
+            color: var(--primary);
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .tagline {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            color: #6C757D;
+            margin-bottom: 35px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-width: 450px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 480px) {
+            form {
+                flex-direction: row;
+                gap: 0;
+                border: 2px solid #E9ECEF;
+                border-radius: 50px;
+                padding: 4px;
+                background: #fff;
+            }
+            form:focus-within {
+                border-color: var(--primary);
+            }
+        }
+
+        input[type="email"] {
+            padding: 16px 24px;
+            border: 2px solid #E9ECEF;
+            border-radius: 50px;
+            font-size: 1rem;
+            outline: none;
+            flex-grow: 1;
+        }
+
+        @media (min-width: 480px) {
+            input[type="email"] {
+                border: none;
+            }
+        }
+
+        button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #1E412E;
+        }
+
+        .perk {
+            margin-top: 15px;
+            font-size: 0.85rem;
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #ADB5BD;
+        }
+
+        footer a {
+            color: #6C757D;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="badge">Coming Late 2026</div>
+        <h1>fibiio</h1>
+        <p class="tagline">Smart, science-backed nutrition tailored strictly to your ecosystem. We are mixing something game-changing behind the scenes.</p>
+        
+        <!-- Email Capture Form -->
+        <form action="#" method="POST" onsubmit="alert('Thank you! You have been added to the Fibiio waitlist.'); return false;">
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit">Join Waitlist</button>
+        </form>
+        <p class="perk">✦ Join today for 15% off your launch order ✦</p>
+
+        <footer>
+            <a href="https://instagram.com" target="_blank">Instagram</a> • 
+            <a href="https://tiktok.com" target="_blank">TikTok</a>
+            <p>&copy; 2026 Fibiio. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
